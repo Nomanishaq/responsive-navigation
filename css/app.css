@@ -2,20 +2,20 @@ body{
   margin: 0;
   padding: 0;
 }
-nav ul {
+.navigation ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
   float: right;
   margin-right: 15px;
 }
-nav ul li{
+.navigation ul li{
   display: inline-block;
   line-height: 8px;
   margin: 0 15px;
   margin-top: 35px;
 }
-nav ul li a{
+.navigation ul li a{
   text-decoration: none;
   position: relative;
   color: white;
@@ -24,7 +24,7 @@ nav ul li a{
   padding: 5px 0;
   font-weight: 500;
 }
-nav ul li a:before{
+.navigation ul li a:before{
   position: absolute;
   content: '';
   left:0;
@@ -36,15 +36,15 @@ nav ul li a:before{
   transform-origin: right;
   transition: transform .2s linear;
 }
-nav ul li a:hover::before{
+.navigation ul li a:hover::before{
   transform: scaleX(1);
   transform-origin: left;
 }
-nav{
+.navigation{
   height: 80px;
   background: #5cdb95;
 }
-nav span img{
+.navigation span img{
   width: 150px;
   position: absolute;
   top: -30px;
@@ -64,7 +64,7 @@ label #cancel{
   display: none;
 }
 @media (max-width: 1118px){
-  nav span img{
+  .navigation span img{
     left: 8%;
   }
 }
@@ -83,7 +83,7 @@ label #cancel{
     transition:  all .5s;
 
   }
-  nav ul li{
+  .navigation ul li{
     display: block;
     margin: 50px 0;
     line-height: 10px;
@@ -102,13 +102,13 @@ label #cancel{
 
 @media (max-width: 994px){
   
-  nav span img{
+  .navigation span img{
     left: 6%;
     top: 20px;
     width: 110px;
     top: -8px;
   }
-  nav ul li a{
+  .navigation ul li a{
     font-size: 13px;
     font-weight: 500;
   }
